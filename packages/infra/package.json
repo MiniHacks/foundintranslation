@@ -2,10 +2,12 @@
   "name": "infra",
   "packageManager": "yarn@3.2.3",
   "scripts": {
-    "dev": "yarn env-cmd -f ../../.env nodemon Caddyfile",
-    "start": "yarn env-cmd -f ../../.env nodemon Caddyfile"
+    "dev": "yarn env-cmd -f ../../.env yarn nodemon Caddyfile",
+    "prepare": "yarn env-cmd -f ../../.env caddy start",
+    "start": "yarn env-cmd -f ../../.env yarn nodemon Caddyfile"
   },
   "devDependencies": {
-    "env-cmd": "^10.1.0"
+    "env-cmd": "^10.1.0",
+    "nodemon": "^2.0.20"
   }
 }
