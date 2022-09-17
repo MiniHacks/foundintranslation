@@ -11,6 +11,7 @@
     "start": "yarn env-cmd yarn workspaces foreach -pi run start"
   },
   "devDependencies": {
+    "@capacitor/cli": "^4.2.0",
     "@typescript-eslint/eslint-plugin": "^4.28.5",
     "@typescript-eslint/parser": "^4.28.5",
     "env-cmd": "^10.1.0",
@@ -29,6 +30,9 @@
     "prettier": "^2.5.1"
   },
   "dependencies": {
+    "@capacitor/android": "^4.2.0",
+    "@capacitor/core": "^4.2.0",
+    "@capacitor/ios": "^4.2.0",
     "@chakra-ui/icons": "^2.0.9"
   }
 }
